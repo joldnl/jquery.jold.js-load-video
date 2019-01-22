@@ -1,4 +1,4 @@
-# jQuery JOLD Js-block
+# jQuery JOLD Js-load-video
 
 Version 1.0.0
 
