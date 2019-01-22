@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>jquery.jold.js-load-video demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script src="../jquery.jold.js-load-video.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>JOLD js-load-video jQuery plugin demo:</h1>
+            <p>A jQuery plugin that only loads youtube and vimeo video's after clicking, for better performance</p>
+            <hr>
+
+            <div class="video-container">
+                <div class="js-load-video-medium" data-service="youtube" data-placeholder="" data-embed="wupToqz1e2g">
+                    <a href="#" class="btn btn__large btn__green btn__notext btn__modal--play" title="Video afspelen"></a>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="js-load-video" data-service="youtube" data-placeholder="" data-embed="wnhvanMdx4s">
+                    <a href="#" class="btn btn__large btn__green btn__notext btn__modal--play" title="Video afspelen"></a>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="js-load-video" data-service="vimeo" data-placeholder="" data-embed="306834650">
+                    <a href="#" class="btn btn__large btn__green btn__notext btn__modal--play" title="Video afspelen"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            (function($){
+                $('.js-load-video-medium').joldLoadVideo({youtubeThumbSize: 'maxresdefault'});
+                $('.js-load-video').joldLoadVideo();
+            })(jQuery);
+        </script>
+
+    </body>
+
+</html>

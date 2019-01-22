@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+.container {
+    padding-top: 50px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    clear: both;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.col {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    /* margin-right: 20px; */
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+h1,h2,h3 {
+    color: rgb(0,0,0);
+}
+
+a {
+    color: #048bf2;
+    font-weight: bold;
+}
+
+.responsive-img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+.video-container {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+
+.video-container iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.btn {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    background-color:#6db71c;
+    display: block;
+    padding: 30px;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.btn:after {
+    margin-top: -24px;
+    margin-left: -30px;
+    display:block;
+    position:absolute;
+    right:5;
+    width:47px;
+    height:47px;
+    background-color:#6db71c;
+    background-image:url('data:image/svg+xml;utf8,<svg width="23" height="34" viewBox="0 0 23 34" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M11.272 17.092L.105 5.924 6 .03l11.167 11.168L22.971 17 6 33.97.197 28.168l11.075-11.075z" fill-rule="evenodd"/></svg>');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:40px 40px;
+    content:'';
+}
