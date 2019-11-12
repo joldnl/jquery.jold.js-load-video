@@ -1,6 +1,6 @@
 # jQuery JOLD Js-load-video
 
-Version 1.0.0
+Version 1.0.1
 
 ## Summary
 
@@ -63,6 +63,12 @@ Tested with jQuery 1.12.1.
 
 
 ## Changelog
+
+
+#### Version 1.0.1
+
+* Only set automatic placeholder image if data-placeholder is empty
+* Update outdated packages, removing all vulnerabilities
 
 
 #### Version 1.0.0
