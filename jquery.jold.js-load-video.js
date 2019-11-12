@@ -61,7 +61,9 @@
 
             // YouTube placeholder and iframe url
             if ( service == 'youtube' ) {
-                image.src   = "https://img.youtube.com/vi/" + videoKey + "/" + settings.youtubeThumbSize + ".jpg";
+                if ( placeholder == '' ) {
+                    image.src   = "https://img.youtube.com/vi/" + videoKey + "/" + settings.youtubeThumbSize + ".jpg";
+                }
                 iframe.src  = "https://www.youtube.com/embed/" + videoKey + "?rel=0&showinfo=0&autoplay=1";
             }
 
@@ -72,7 +74,9 @@
                     url: "http://vimeo.com/api/v2/video/" + videoKey + ".json",
                     dataType: 'jsonp',
                     success: function(data){
-                        image.src = data[0][settings.vimeoThumbSize];
+                        if ( placeholder == '' ) {
+                            image.src = data[0][settings.vimeoThumbSize];
+                        }
                     }
                 });
 
