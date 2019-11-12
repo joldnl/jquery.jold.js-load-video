@@ -41,7 +41,7 @@
             var image       = new Image();
 
             // Set image attributes
-            $(image).addClass('responsive-img');
+            $(image).addClass(settings.placeholderClass);
 
             // Prepare the iframe
             var iframe      = document.createElement('iframe');
