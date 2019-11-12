@@ -19,6 +19,7 @@
         var defaults    = {
             youtubeThumbSize: 'maxresdefault',
             vimeoThumbSize: 'thumbnail_large',
+            placeholderClass: 'img-fluid',
         }
 
         /**
