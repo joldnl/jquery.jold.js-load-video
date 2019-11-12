@@ -1,0 +1,13 @@
+.*.swp
+._*
+.DS_Store
+.git
+.gitignore
+.hg
+.npmrc
+.lock-wscript
+.svn
+gulpfile.js
+node_modules
+CVS
+npm-debug.log
