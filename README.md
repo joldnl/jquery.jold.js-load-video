@@ -1,6 +1,6 @@
 # jQuery JOLD Js-load-video
 
-Version 1.0.2
+Version 1.0.3
 
 ## Summary
 
@@ -79,6 +79,10 @@ Tested with jQuery 1.12.1.
 
 
 ## Changelog
+
+#### Version 1.0.3
+
+* FIX: Get image class from setting, not hardcoded
 
 
 #### Version 1.0.2

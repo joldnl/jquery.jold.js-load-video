@@ -1,5 +1,5 @@
 /*!
- * JOLD jQuery Load Video 1.0.2
+ * JOLD jQuery Load Video 1.0.3
  *
  * Copyright (c) 2018 JOLD Interactive; Jurgen Oldenburg <info@jold.nl>
  *
