@@ -1,6 +1,6 @@
 {
   "name": "jquery.jold.js-load-video",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A jQuery plugin that only loads youtube and vimeo video's after clicking, for better performance",
   "main": "gulpfile.js",
   "devDependencies": {

@@ -1,6 +1,6 @@
 # jQuery JOLD Js-load-video
 
-Version 1.0.1
+Version 1.0.2
 
 ## Summary
 
@@ -79,6 +79,12 @@ Tested with jQuery 1.12.1.
 
 
 ## Changelog
+
+
+#### Version 1.0.2
+
+* Improve documentation and demonstration files
+* Remove unused dependencies
 
 
 #### Version 1.0.1
