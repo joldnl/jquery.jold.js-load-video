@@ -41,6 +41,11 @@ a {
     font-weight: bold;
 }
 
+p.demo-info {
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
 .responsive-img {
     min-width: 100%;
     max-width: 100%;
@@ -54,6 +59,7 @@ a {
 	height: 0;
     margin-bottom: 60px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 
@@ -75,6 +81,10 @@ a {
     padding: 30px;
     margin-top: -30px;
     margin-left: -30px;
+}
+
+.btn span {
+    display: none;
 }
 
 .btn:after {

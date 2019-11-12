@@ -4,7 +4,7 @@ Version 1.0.1
 
 ## Summary
 
-A jQuery plugin that shows placeholder images for embedded YouTube or Vimeo videos, and only loads the video after clicking the placeholder.
+A jQuery plugin that shows placeholder images for embedded YouTube or Vimeo videos, and only loads the video after clicking the placeholder. This alows for faster page loads as the video's, cookies, and other files of the video services are loaded when the video is actually started. 
 
 ## Author
 
@@ -28,19 +28,32 @@ $ npm install jquery.jold.js-load-video
 ```html
 <div class="video-container">
     <div class="js-load-video" data-service="vimeo" data-placeholder="" data-embed="306834650">
-        <a href="#" class="btn btn__large btn__green btn__notext btn__modal--play" title="Video afspelen"></a>
+        <a href="#" class="btn btn-play" title="Play video">Play</a>
     </div>
 </div>
 
 ```
 
-Set the data attributes:
+### Set the data attributes:
 
-**Service:** Can be either YouTube or Vimeo. Other services are not supported.
+| Data attribute | Description |
+| ------------- | -------- |
+|**data-service** | Can be either YouTube or Vimeo. Other services are not supported. |
+|**data-placeholder** | You can provide your own placeholder (url). Leave this empty to retrieve the thumbnail from YouTube or Vimeo automatically. |
+|**data-embed** | The video key or ID from YouTube or Vimeo |
 
-**placeholder:** You can provide your own placeholder (url). Leave this empty to retrieve the thumbnail from YouTube or Vimeo automatically.
 
-**data-embed:** The video key or ID from YouTube or Vimeo
+### Plugin options
+The plugin has three options you can set:
+
+**youtubeThumbSize:** Set the YouTube placeholder thumbnail image size.
+Default: `'maxresdefault'`
+
+**vimeoThumbSize:** Set Vimeo placeholder image image size. Read more: 
+Default: `'thumbnail_large'`
+
+**placeholderClass:** Css class of the placeholder image tag
+Default: `'img-fluid'`
 
 
 
@@ -48,8 +61,11 @@ Set the data attributes:
 ### Initialize the plugin
 
 ```js
-$('.js-load-video').joldJsLoadVideo({ youtubeThumbSize: 'hqdefault', vimeoThumbSize: 'thumbnail_large' });
-
+$('.js-load-video').joldJsLoadVideo({
+    youtubeThumbSize: 'hqdefault',
+    vimeoThumbSize: 'thumbnail_large'
+    placeholderClass: 'img-fluid'
+});
 ```
 
 This example checks for all .js-load-video elements, places a placeholder and loads the video on click.
