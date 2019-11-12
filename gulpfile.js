@@ -26,21 +26,12 @@ var options = {
         url             : "https://github.com/joldnl/jquery.jold.js-load-video",
     },
 
-
-    // ----- Default task options ----- //
-    default : {
-        tasks : [ 'build' ]
-    },
-
-
     // ----- Build task options ----- //
     build : {
-        tasks       : [ 'process:js' ],
         destination : {
             js  : './',
         }
     },
-
 
     // ----- JavaScript task options ----- //
     js : {
@@ -63,7 +54,7 @@ var options = {
 
         run : function() {
             return [
-                [ 'process:js' ],
+                [ 'default' ],
             ]
         }
 
@@ -74,41 +65,10 @@ var options = {
 
 
 // -------------------------------------
-//   Task: Default
-// -------------------------------------
-
-gulp.task( 'default', function() {
-
-    options.build.tasks.forEach( function( task ) {
-        gulp.parallel([task]);
-        // gulp.series( [task] );
-    });
-
-});
-
-
-
-
-// -------------------------------------
-//   Task: Build
-// -------------------------------------
-
-gulp.task( 'build', function() {
-
-    options.build.tasks.forEach( function( task ) {
-        gulp.series( [task] )();
-    });
-
-});
-
-
-
-
-// -------------------------------------
 //   Task: Process Javascript
 // -------------------------------------
 
-gulp.task( 'process:js', function () {
+gulp.task( 'default', function () {
 
     return gulp.src( options.js.includes )
         .pipe( plumber() )                                      // Prevent pipe breaking from errors
